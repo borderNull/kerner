@@ -639,6 +639,7 @@ body {
   padding: 13px 0;
   -ms-flex-order: 1;
       order: 1;
+  transition: all 0.3s;
   -js-display: flex;
   display: -ms-flexbox;
   display: flex;
@@ -648,6 +649,9 @@ body {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+}
+.middle__catalog:hover {
+  background: #579ac5;
 }
 .catalog__btn {
   margin-right: 20px;
