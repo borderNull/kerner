@@ -1,0 +1,65 @@
+extends _layout
+
+block content
+   header.header
+      .header-content
+          nav.navigation
+             a.navigation__link(href="#") О компании
+             a.navigation__link(href="#") Оплата и доставки
+             a.navigation__link(href="#") Производители
+             a.navigation__link(href="#") Статьи
+             a.navigation__link(href="#") Контакты
+             a.navigation__link(href="#") Отзывы
+          .authorization
+             a.authorization__link(href="#") 
+               +svgIcon('user')
+               span.authorization__link-text Войти
+             a.authorization__link(href="#") Регистрация
+   section.top-panel
+      .top-panel-content
+        .logo-section
+           +svgIcon('logo')
+           span.logo__text Оборудование для сверления и металлообработки
+        .search-section
+           +svgIcon('search')
+           input.search__input(placeholder="Поиск по сайту...")
+        .phone-section
+           p.phone__number 8 800 775-87-97
+           a.phone__link(href="#") Обратный звонок
+   section.middle
+       .middle-content
+           h1.middle__title 
+              |Промышленное оборудование 
+              br
+              |для сверления и металлообработки
+           a.middle__catalog(href="#")
+             .catalog__btn
+                .catalog__item
+                .catalog__item
+                .catalog__item
+             span.catalog__text Перейти в каталог
+       a.scroll__link(href="#")  
+           +svgIcon('scroll')
+   section.bottom
+      .bottom-content
+          .bottom-item
+              +svgIcon('boxes')
+              .bottom-item-content
+                  h3.bottom-item__title 
+                   |поставка оборудования 
+                   br
+                   |и запчастей
+                  p.bottom-item__text  От 11 ведущих производителей
+          .bottom-item
+              +svgIcon('offer')
+              .bottom-item-content
+                  h3.bottom-item__title рассрочка платежа
+                  p.bottom-item__text  До 45 дней с оформления заказа
+          .bottom-item
+              +svgIcon('delivery')
+              .bottom-item-content
+                  h3.bottom-item__title доставка товаров
+                  p.bottom-item__text  
+                   |Международная и междугородняя
+                   br 
+                   |в срок до 10 дней

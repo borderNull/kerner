@@ -1,0 +1,15 @@
+doctype
+html
+    head
+        title Kerner
+        meta(charset='utf-8')
+        meta(name="viewport", content="width=device-width, user-scalable=yes")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet")
+        link(href="./css/main.css", type="text/css", rel="stylesheet")
+    
+    block variables 
+    body
+        include _svg.pug
+        .page-wrap
+            block content
+        script(src="./js/app.js")
